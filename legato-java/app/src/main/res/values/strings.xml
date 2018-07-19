@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Legato Java</string>
+    <string name="login">Login</string>
+    <string name="main">Main</string>
+    <string name="dispatch">Dispatch</string>
+    <string name="error">Error</string>
+</resources>
