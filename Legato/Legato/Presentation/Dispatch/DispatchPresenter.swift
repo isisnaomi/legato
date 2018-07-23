@@ -10,7 +10,7 @@ import Foundation
 
 class DispatchPresenter: DispatchViewPresenter {
     
-    private let flowHandler: FlowHandler<DataProvider, Flows>
+    private var flowHandler: FlowHandler<DataProvider, Flows>
     private var currentFlow: Flows = .main
     
     let view: DispatchView!

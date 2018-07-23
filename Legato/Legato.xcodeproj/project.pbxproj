@@ -90,7 +90,6 @@
 			children = (
 				A0623CBD2106472A00A6DDE7 /* Utils */,
 				A0623CBC2106472200A6DDE7 /* Common */,
-				A0623CBB2106471700A6DDE7 /* Handlers */,
 				A0623CBA2106470E00A6DDE7 /* Presentation */,
 				A0623CA8210645D900A6DDE7 /* AppDelegate.swift */,
 				A0623CAF210645DB00A6DDE7 /* Assets.xcassets */,
@@ -168,6 +167,7 @@
 		A0623CCB2106485600A6DDE7 /* Dispatch */ = {
 			isa = PBXGroup;
 			children = (
+				A0623CBB2106471700A6DDE7 /* Handlers */,
 				A0623CCC2106492500A6DDE7 /* DispatchContract.swift */,
 				A0623CCE2106493600A6DDE7 /* DispatchPresenter.swift */,
 				A0623CD02106494000A6DDE7 /* DispatchViewController.swift */,

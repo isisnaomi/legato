@@ -35,9 +35,10 @@ public class FlowHandler<LogicHandler, ConcreteFlow> {
     /*
      Builds chains of handler objects.
      */
-    func link(with next: FlowHandler) -> Self {
+    func link(with next: FlowHandler) -> FlowHandler {
+        debugPrint("On \(self) link next: \(next)")
         self.next = next
-        return self
+        return self.next!
     }
     
     /*
@@ -67,6 +68,7 @@ public class FlowHandler<LogicHandler, ConcreteFlow> {
      - parameter callback: which handles logic after validation.
      */
     func executeNext(_ callback: FlowHandlerCallback ) {
+        debugPrint("Execute: \(self)")
         if let next = next {
             next.runValidations(callback);
         } else {
@@ -81,6 +83,7 @@ public class FlowHandler<LogicHandler, ConcreteFlow> {
      - parameter callback: which handles logic after validation.
      */
     func executeEarlyExit(_ callback: FlowHandlerCallback) {
+        debugPrint("Early exit on: \(self)")
         callback.onEarlyExit(flow: concreteFlow);
     }
 }
