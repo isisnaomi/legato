@@ -33,12 +33,11 @@ implementation.
 
 Example:
 
-```
+```swift
 class SessionFaker: DataProvider {
     func hasSessionStarted() -> Bool {
         return true
     }
-
 }
 ```
 
@@ -50,7 +49,7 @@ Right click above your main project folder and select Add Files to "ProjectName"
 
   Example:
 
-  ```
+  ```swift
   public enum Storyboard: String {
       case login = "Login"
       case dispatch = "Dispatch"
@@ -66,21 +65,21 @@ Right click above your main project folder and select Add Files to "ProjectName"
 
   Example:
 
-  ```
-  public enum Flows: TransitionAccessor {
-      case main
-      case login
+  ```swift
+    public enum Flows: TransitionAccessor {
+        case main
+        case login
 
-      func getTransition() -> Transition? {
-          switch self {
-          case .main:
-              return (.main, .main)
-          case .login:
-              return (.login, .login)
-          }
-      }
-  }
-```
+        func getTransition() -> Transition? {
+            switch self {
+            case .main:
+                return (.main, .main)
+            case .login:
+                return (.login, .login)
+            }
+        }
+    }
+  ```
 
 ### 4. Add Flow Handlers for Dispatch Flow
 Right click above your main project folder and select Add Files to "ProjectName".. and select the folder `Presentations/Dispatch` from the `Legato` library.
@@ -88,17 +87,14 @@ Right click above your main project folder and select Add Files to "ProjectName"
 
   4.1 Add all your "sendToScreen" methods mapping each case of the "Screen" enum to the file `DispatchContract.swift` and update `DispatchViewController` to implement contract.
 
-    Example:
-
-    ```
+```swift
     func sendToMain();
     func sendToLogin();
-
-    ```
+```
 
   4.2 Implement your custom flows inside file `DispatchPresenter.swift`.
 
-      ```
+```swift
       required init(view: DispatchView) {
           self.view = view
           flowHandler = SessionFlowHandler(
@@ -113,5 +109,4 @@ Right click above your main project folder and select Add Files to "ProjectName"
                   UserFaker(), concreteFlow: .error
               ))
       }
-
-      ```
+```
