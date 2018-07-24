@@ -8,3 +8,7 @@ Legato is an opinionated mobile navigation flow handler.
 * Add step by step guide.
 * Add info about folders structure.
 * Add kotlin version.
+
+
+
+* [Swift](./Legato/README.md)

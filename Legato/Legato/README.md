@@ -8,15 +8,15 @@ Legato is an opinionated mobile navigation flow handler.
 
 ## Project structure
 
-* [Common](./Legato/Legato/Common)
-  * [Navigation](./Legato/Legato/Navigation)
-* [Presentation](./Legato/Legato/Presentation)
-  * [Dispatch](./Legato/Legato/Presentation/Dispatch)
-    * [Handlers](./Legato/Legato/Presentation/Dispatch/Handlers)
-  * [Error](./Legato/Legato/Presentation/Error)
-  * [Login](./Legato/Legato/Presentation/Login)
-  * [Main](./Legato/Legato/Presentation/Main)
-* [Utils](./Legato/Legato/Utils)
+* [Common](./Common)
+  * [Navigation](./Navigation)
+* [Presentation](./Presentation)
+  * [Dispatch](./Presentation/Dispatch)
+    * [Handlers](./Presentation/Dispatch/Handlers)
+  * [Error](./Presentation/Error)
+  * [Login](./Presentation/Login)
+  * [Main](./Presentation/Main)
+* [Utils](./Utils)
 
 
 ## Usage
