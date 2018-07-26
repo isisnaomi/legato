@@ -45,7 +45,7 @@ class SessionFaker: DataProvider {
 ### 3. Add Navigation Helpers
 Right click above your main project folder and select Add Files to "ProjectName".. then select the folder `Common/Navigation` from the `Legato` library. Inside this folder do the following:
 
-  3.1 Add your own Storyboard identifiers and controllers by name to the file `Navigation+Captain.swift` as enums.
+  #### 3.1 Add your own Storyboard identifiers and controllers by name to the file `Navigation+Captain.swift` as enums.
 
   Example:
 
@@ -61,7 +61,7 @@ Right click above your main project folder and select Add Files to "ProjectName"
   }
   ```
 
-  3.2 Add your own transition combinations to the file `Navigation+Transition.swift` as enums.
+  #### 3.2 Add your own transition combinations to the file `Navigation+Transition.swift` as enums.
 
   Example:
 
@@ -85,14 +85,14 @@ Right click above your main project folder and select Add Files to "ProjectName"
 Right click above your main project folder and select Add Files to "ProjectName".. and select the folder `Presentations/Dispatch` from the `Legato` library.
 
 
-  4.1 Add all your "sendToScreen" methods mapping each case of the "Screen" enum to the file `DispatchContract.swift` and update `DispatchViewController` to implement contract.
+  #### 4.1 Add all your "sendToScreen" methods mapping each case of the "Screen" enum to the file `DispatchContract.swift` and update `DispatchViewController` to implement contract.
 
 ```swift
     func sendToMain();
     func sendToLogin();
 ```
 
-  4.2 Implement your custom flows inside file `DispatchPresenter.swift`.
+  #### 4.2 Implement your custom flows inside file `DispatchPresenter.swift`.
 
 ```swift
       required init(view: DispatchView) {
